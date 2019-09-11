@@ -16,20 +16,14 @@ $movementvalues = $function->getMovementData();
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; text-align: center; }
-    </style>
-</head>
+<?php require_once('assets/includes/header.html'); ?>
 <body>
-<div class="page-header">
+<div class="jumbotron">
     <h1>Hoi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welkom.</h1>
 </div>
 <p>
-    <a href="logout.php" class="btn btn-danger">Uitloggen</a>
+    <a href="logout.php"><button type="button" class="btn btn-outline-danger"><i class="icon-signout"></i> Uitloggen</button></a>
+    <a href="userProfile.php"><button type="button" class="btn btn-outline-info"><i class="icon-user"></i> Mijn profiel</button></a>
 </p>
 <?php foreach ($movementvalues as $movementdata) { ?>
 
