@@ -5,6 +5,13 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
+
+require 'assets/inc/connection.php';
+require 'assets/inc/db_functions.php';
+
+$function = new db_functions();
+
+$movementvalues = $function->getMovementData();
 ?>
 
 <!DOCTYPE html>
@@ -24,5 +31,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <p>
     <a href="logout.php" class="btn btn-danger">Uitloggen</a>
 </p>
+<?php foreach ($movementvalues as $movementdata) { ?>
+
+    <p style="color: black;"><?php echo $movementdata->timestamp; ?></p>
+    <img class="blockPic" src="assets/imagesCamera/<?php echo $movementdata->image ; ?>">
+
+
+
+<?php }
+?>
 </body>
 </html>
