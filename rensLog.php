@@ -62,9 +62,9 @@
 </head>
 <body>
 <div class="topnav">
-    <a href="#" style="float:left">Home</a>
-    <a href="#">Logout</a>
-    <a href="#">Settings</a>
+    <a href="rensLog.php" style="float:left">Home</a>
+    <a href="logout.php">Logout</a>
+    <a href="settings.php">Settings</a>
 </div>
 <div class="column">
     <table id="t01">
