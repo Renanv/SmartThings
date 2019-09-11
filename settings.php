@@ -28,8 +28,8 @@
         .column {
             float: left;
             width: 100%;
-            padding-top: 30px;
-            padding-left: 300px;
+            padding-top: 5px;
+            padding-left: 10px;
         }
 
     </style>
@@ -40,7 +40,7 @@
     <a href="logout.php">Logout</a>
     <a href="settings.php">Settings</a>
 </div>
-<div>
+<div class="column">
     <h1>Settings</h1>
 </div>
 </body>
