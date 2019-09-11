@@ -34,11 +34,13 @@ $movementvalues = $function->getMovementData();
 <?php foreach ($movementvalues as $movementdata) { ?>
 
     <p style="color: black;"><?php echo $movementdata->timestamp; ?></p>
-    <img class="blockPic" src="assets/imagesCamera/<?php echo $movementdata->image ; ?>">
+    <img class="blockPic" src="assets/imagesCamera/<?php echo $movementdata->image ; ?>"> <br />
 
 
 
 <?php }
+
+
 ?>
 </body>
 </html>

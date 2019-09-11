@@ -36,7 +36,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `alarmsysteem`.`movementlog` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `timestamp` VARCHAR(45) NOT NULL,
-  `blob` BLOB NOT NULL,
+  `image` VARCHAR(125) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) )
 ENGINE = InnoDB;
