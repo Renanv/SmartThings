@@ -40,7 +40,15 @@ $movementvalues = $function->getMovementData();
 
 <?php }
 
+$x = 0;
+$time = 13;
+$time2 = 12;
 
+while ($x < 14){
+    echo "INSERT INTO movementlog( timestamp, image) VALUES ( '". $time .":". $time2 ."', '". $x .".jpg');";
+    $x ++;
+    $time2 ++;
+}
 ?>
 </body>
 </html>
