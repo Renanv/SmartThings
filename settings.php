@@ -29,7 +29,15 @@
             float: left;
             width: 100%;
             padding-top: 5px;
-            padding-left: 10px;
+            padding-left: 30px;
+        }
+
+        .column2 {
+            float: left;
+            width: 40%;
+            padding-top: 30px;
+            padding-left: 60px;
+            border: 1px solid black;
         }
 
     </style>
@@ -41,7 +49,10 @@
     <a href="settings.php">Settings</a>
 </div>
 <div class="column">
-    <h1>Settings</h1>
+    <h1>Instellingen</h1>
+</div>
+<div class="column2">
+    <p>Het alarmsysteem is uitgeschakelt tussen:</p>
 </div>
 </body>
 </html>
