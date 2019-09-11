@@ -32,14 +32,6 @@
             padding-left: 30px;
         }
 
-        .column2 {
-            float: left;
-            width: 40%;
-            padding-top: 30px;
-            padding-left: 60px;
-            border: 1px solid black;
-        }
-
     </style>
 </head>
 <body>
@@ -50,9 +42,6 @@
 </div>
 <div class="column">
     <h1>Instellingen</h1>
-</div>
-<div class="column2">
-    <p>Het alarmsysteem is uitgeschakelt tussen:</p>
 </div>
 </body>
 </html>
