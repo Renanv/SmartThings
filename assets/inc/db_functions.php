@@ -19,7 +19,8 @@ class db_functions
 
     function changeEmail($email){
         global $conn;
-        $sql = $conn->prepare("UPDATE `users` SET `username` = ". $email ." WHERE `users`.`username` =" . $_SESSION["username"] . ";");
+
+        $sql = $conn->prepare("UPDATE users SET username = '". $email ."' WHERE username ='" . $_SESSION["username"] . "';");
         if($sql->execute()){
             echo "<script>alert('Wijzigingen geslaagd!');</script>";
         }
@@ -27,7 +28,7 @@ class db_functions
 
     function changeMobileNumber($number){
         global $conn;
-        $sql = $conn->prepare("UPDATE `users` SET `mobielnummer` = ". $number ." WHERE `users`.`username` =" . $_SESSION["username"] . ";");
+        $sql = $conn->prepare("UPDATE users SET mobielnummer = '". $number ."' WHERE username ='" . $_SESSION["username"] . "';");
         if($sql->execute()){
             echo "<script>alert('Wijzigingen geslaagd!');</script>";
         }
