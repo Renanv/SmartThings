@@ -76,8 +76,6 @@ $movementvalues = $function->getMovementData();
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Annuleren</button>
-                    <button type="submit" class="btn btn-success" name="saveOption">Wijzigen</button>
                 </div>
             </div>
         </form>
